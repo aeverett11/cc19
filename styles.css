@@ -1,0 +1,88 @@
+/* Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #333;
+    color: white;
+    height: 60px;
+  }
+  
+  .toolbar-left, .toolbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ddd;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .toolbar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .toolbar-left, .toolbar-right {
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .toolbar-right {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn {
+      padding: 8px 15px;
+      font-size: 0.9em;
+    }
+  
+    .logo {
+      font-size: 1.2em;
+    }
+  }
+  
+  /* Utility Classes */
+  
